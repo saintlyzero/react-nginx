@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Link } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Deploy React on NGINX</h1>
+      <p className="app-desc">
+        This app uses React Router v6 and is deployed over a NGINX server
+      </p>
+      <ul>
+        <li>
+          <Link className="page-link" to={`/foo`}>
+            Page Foo
+          </Link>
+        </li>
+
+        <li>
+          <Link className="page-link" to={`/bar`}>
+            Page Bar
+          </Link>
+        </li>
+      </ul>
     </div>
   );
 }

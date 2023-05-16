@@ -1,38 +1,78 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: rgba(94, 15, 52, 0.747);
+  margin-left: 25%;
+  margin-right: 25%;
+  width: 50%;
+  height: 350px;
+  margin-top: 10%;
+  border-radius: 10px;
+  border: 7px double black;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+h1 {
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 4px;
+  font-size: 55px;
+  margin: 0px;
+  padding: 0px;
+  padding-top: 20px;
+}
+
+li {
+  font-size: 32px;
+  line-height: 50px;
+  color: rgba(3, 3, 3, 0.918);
+  font-weight: 800;
+  font-family: "Wix Madefor Display", sans-serif;
+}
+
+.app-desc {
+  font-family: "Wix Madefor Display", sans-serif;
+  font-size: 25px;
+  text-align: justify;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.page-content {
+  font-family: "Wix Madefor Display", sans-serif;
+  font-size: 27px;
+  line-height: 35px;
+  text-align: justify;
+}
+
+.page-container {
+  margin-top: 5%;
+  padding: 25px;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+h2 {
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 2.2px;
+  font-size: 29px;
+}
+
+.back-button {
   color: white;
+  border: 2px solid black;
+  text-decoration: none;
+  background-color: rgba(65, 3, 32, 0.815);
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.page-link {
+  color: white;
+  text-decoration: underline;
 }
