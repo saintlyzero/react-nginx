@@ -3,12 +3,12 @@
 # syntax=docker/dockerfile:1.4
 
 # 1. For build React app
-FROM node:lts AS development
+# FROM node:lts AS development
+FROM node:lts-alpine AS development
 
 # Set working directory
 WORKDIR /app
 
-# 
 COPY package.json /app/package.json
 COPY package-lock.json /app/package-lock.json
 
@@ -27,7 +27,8 @@ RUN npm run build
 
 
 FROM development as dev-envs
-RUN apt-get update
+RUN apk update 
+RUN apk upgrade
 
 CMD [ "npm", "start" ]
 
