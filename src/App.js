@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <h1>Deploy React on NGINX</h1>
+      <h1>Deploy React App on NGINX</h1>
       <p className="app-desc">
         This app uses React Router v6 and is deployed over a NGINX server
       </p>
