@@ -8,3 +8,8 @@
 
 ## See Deployed Webpage
 Navigate to http://localhost:8080/
+
+## Web Pages
+- Home : http://localhost:8080/
+- Foo Page : http://localhost:8080/foo
+- Bar Page : http://localhost:8080/bar
